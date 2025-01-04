@@ -92,13 +92,12 @@ body {
     padding-left: 15px;
     transition: .5s;
     font-weight: bolder;
-
-    display: flex;
-    align-items: center;
 }
 
 #tasks-list li span {
     font-size: 18px;
+    margin-top: 23px;
+    position: absolute;
 }
 
 /* icon */
@@ -141,7 +140,7 @@ body {
     background-color: #EB0927;
 }
 
-.hide { 
+.hide {
     display: none;
 }
 
