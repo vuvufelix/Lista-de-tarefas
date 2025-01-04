@@ -10,7 +10,7 @@ body {
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    padding: 30px;
+    padding-top: 30px;
 }
 
 #tasks-container {
@@ -22,5 +22,131 @@ body {
 /* tasks form */
 
 #tasks-header {
-    
+    margin-top: 40px;
+}
+
+#add-task-form {
+    position: relative;
+}
+
+#add-task-form input {
+    border: 1px solid #34073D;
+    background-color: #fff;
+    padding: 15px;
+    color: #34073D;
+    margin-top: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 18px;
+}
+
+#add-task-form input::placeholder {
+    color: #34073D;
+}
+
+#add-task-form input:focus {
+    outline: none;
+}
+
+#add-btn {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #34073D;
+    transition: .5s;
+    width: 60px;
+    height: 53px;
+    outline: 0;
+    cursor: pointer;
+    top: 20px;
+    right: 0;
+}
+
+#add-btn:hover {
+    background-color: #34073D;
+    color: #fff;
+}
+
+/* tasks container */
+
+#tasks-list-container {
+    margin-top: 50px;
+}
+
+#tasks-list-container > h2 {
+    margin-bottom: 25px;
+}
+
+#tasks-list {
+    list-style: none;
+}
+
+#tasks-list li {
+    text-align: left;
+    height: 50px;
+    line-height: 5px;
+    position: relative;
+    border-bottom: 3px solid #34073D;
+    background-color: #fff;
+    color: #34073D;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    transition: .5s;
+    font-weight: bolder;
+
+    display: flex;
+    align-items: center;
+}
+
+#tasks-list li span {
+    font-size: 18px;
+}
+
+/* icon */
+
+.done-btn {
+    display: inline;
+    position: absolute;
+    top: 0px;
+    height: 40px;
+    transition: .5s;
+    cursor: pointer;
+    width: 30px;
+    padding: 5px;
+    right: 40px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.done-btn:hover {
+    background-color: #09E01B;
+    color: #fff;
+}
+
+.remove-btn {
+    display: inline;
+    position: absolute;
+    top: 0;
+    height: 40px;
+    transition: .5s;
+    cursor: pointer;
+    width: 30px;
+    padding: 5px;
+    right: 0px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.remove-btn:hover {
+    color: #fff;
+    background-color: #EB0927;
+}
+
+.hide { 
+    display: none;
+}
+
+#tasks-list li.done {
+    background-color: #34073D;
+    color: #fff;
+    text-decoration: line-through;
 }
