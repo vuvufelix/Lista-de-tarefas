@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tarefas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="tasks-container">
+        <div id="tasks-header">
+            <h2>Salve a sua próxima tarefa aquí</h2>
+            <form action="" id="add-task-form">
+                <input type="text" id="task-title" placeholder="O que você vai fazer ?">
+                <button type="submit" id="add-btn">+</button>
+            </form>
+        </div>
+        <div id="tasks-list-container">
+            <h2>Estas são as suas tarefas</h2>
+            <ul id="tasks-list">
+                <li class="task-box">
+                    <span class="task-title">Teste</span>
+                    <div class="done-btn" style="display: inline;">V</div>
+                    <div class="remove-btn" style="display: inline;">X</div>
+                </li>
+                <li class="task-box">
+                    <span class="task-title">Teste</span>
+                    <div class="done-btn" style="display: inline;">V</div>
+                    <div class="remove-btn" style="display: inline;">X</div>
+                </li>
+                <li class="task-box">
+                    <span class="task-title">Teste</span>
+                    <div class="done-btn" style="display: inline;">V</div>
+                    <div class="remove-btn" style="display: inline;">X</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(to right, #E65763, #34073D);
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 30px;
+}
+
+#tasks-container {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* tasks form */
+
+#tasks-header {
+    
+}
